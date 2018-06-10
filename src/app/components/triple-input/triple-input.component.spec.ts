@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AreaCircleComponent } from './area-circle.component';
+import { TripleInputComponent } from './triple-input.component';
 
-describe('AreaCircleComponent', () => {
-  let component: AreaCircleComponent;
-  let fixture: ComponentFixture<AreaCircleComponent>;
+describe('TripleInputComponent', () => {
+  let component: TripleInputComponent;
+  let fixture: ComponentFixture<TripleInputComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AreaCircleComponent ]
+      declarations: [ TripleInputComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AreaCircleComponent);
+    fixture = TestBed.createComponent(TripleInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

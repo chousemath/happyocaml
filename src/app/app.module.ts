@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AreaCircleComponent } from './components/area-circle/area-circle.component';
+import { SingleInputComponent } from './components/single-input/single-input.component';
+import { DoubleInputComponent } from './components/double-input/double-input.component';
+import { TripleInputComponent } from './components/triple-input/triple-input.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AreaCircleComponent
+    SingleInputComponent,
+    DoubleInputComponent,
+    TripleInputComponent
   ],
   imports: [
     BrowserModule,

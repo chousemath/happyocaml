@@ -1,0 +1,10 @@
+.answer-container {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-jumbotron {
+    margin-top: 15px;
+}

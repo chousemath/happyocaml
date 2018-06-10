@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1 class="display-4">Area of a Circle</h1>
+
+  <div class="row row-jumbotron">
+    <div class="col-sm-12">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Radius</span>
+        </div>
+        <input type="number" class="form-control" [(ngModel)]="radiusAreaCircle" (ngModelChange)="calcAreaCircle($event)" min="0">
+        <div class="input-group-append">
+          <span class="input-group-text">Area: {{ areaCircle }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <ngx-gist [gistId]="'chousemath/'+gistId"></ngx-gist>
+    </div>
+  </div>
+</div>

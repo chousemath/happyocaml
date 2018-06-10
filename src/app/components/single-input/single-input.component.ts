@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as M from 'basicmathfunc';
 
 @Component({
   selector: 'app-single-input',
@@ -12,8 +11,9 @@ export class SingleInputComponent implements OnInit {
   @Input() valueLabel: string;
   @Input() equation: string;
   @Input() gistId: string;
-  radius = 0;
-  area = 0;
+  @Input() mathFunction: Function;
+  inputValue = 0;
+  calculatedValue = 0;
 
   constructor() {
   }
@@ -21,8 +21,8 @@ export class SingleInputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onRadiusChange(radius: number) {
-    this.area = M.areaCircle(radius);
+  onInputChange(inputValue: number) {
+    this.calculatedValue = this.mathFunction(inputValue);
   }
 
 }

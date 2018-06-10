@@ -10,10 +10,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text">{{ inputLabel }}</span>
         </div>
-        <input type="number" class="form-control" [(ngModel)]="base" (ngModelChange)="onBaseChange($event)" min="0">
-        <input type="number" class="form-control" [(ngModel)]="height" (ngModelChange)="onHeightChange($event)" min="0">
+        <input type="number" class="form-control" [(ngModel)]="inputValue1" (ngModelChange)="onInputValue1Change($event)" min="0">
+        <input type="number" class="form-control" [(ngModel)]="inputValue2" (ngModelChange)="onInputValue2Change($event)" min="0">
         <div class="input-group-append">
-          <span class="input-group-text">{{ valueLabel }}: {{ area }}</span>
+          <span class="input-group-text">{{ valueLabel }}: {{ calculatedValue }}</span>
         </div>
       </div>
     </div>

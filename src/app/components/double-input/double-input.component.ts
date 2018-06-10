@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as M from 'basicmathfunc';
 
 @Component({
   selector: 'app-double-input',
@@ -12,21 +11,22 @@ export class DoubleInputComponent implements OnInit {
   @Input() inputLabel: string;
   @Input() valueLabel: string;
   @Input() equation: string;
-  base = 0;
-  height = 0;
-  area = 0;
+  @Input() mathFunction: Function;
+  inputValue1 = 0;
+  inputValue2 = 0;
+  calculatedValue = 0;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onBaseChange(base: number) {
-    this.area = M.areaParallelogram(base, this.height);
+  onInputValue1Change(inputValue1: number) {
+    this.calculatedValue = this.mathFunction(inputValue1, this.inputValue2);
   }
 
-  onHeightChange(height: number) {
-    this.area = M.areaParallelogram(this.base, height);
+  onInputValue2Change(inputValue2: number) {
+    this.calculatedValue = this.mathFunction(this.inputValue1, inputValue2);
   }
 
 }

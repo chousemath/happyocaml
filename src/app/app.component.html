@@ -1,7 +1,22 @@
 <app-navbar></app-navbar>
 <div class="container" style="padding-top: 15px;">
+
   <app-single-input [title]="'Area of a Circle'" [inputLabel]="'Radius'" [valueLabel]="'Area'" [gistId]="'74b5b0ac66d949713f0a034d01e293de'"
-    [equation]="'assets/equations/areaCircle.png'"></app-single-input>
+    [equation]="'assets/equations/areaCircle.png'" [mathFunction]="areaCircle"></app-single-input>
+
   <app-double-input [title]="'Area of a Parallelogram'" [inputLabel]="'Base and Height'" [valueLabel]="'Area'" [gistId]="'890a94b4ea97daa94bf17e61faa0fe07'"
-    [equation]="'assets/equations/areaParallelogram.png'"></app-double-input>
+    [equation]="'assets/equations/areaParallelogram.png'" [mathFunction]="areaParallelogram"></app-double-input>
+
+  <app-double-input [title]="'Area of a Rectangle'" [inputLabel]="'Length and Width'" [valueLabel]="'Area'" [gistId]="'7cbbd407ddc601553cf8517497c97185'"
+    [equation]="'assets/equations/areaRectangle.png'" [mathFunction]="areaRectangle"></app-double-input>
+
+  <app-single-input [title]="'Area of a Square'" [inputLabel]="'Side'" [valueLabel]="'Area'" [gistId]="'b2a928f3340e5273d0cf72856cf4aaa8'"
+    [equation]="'assets/equations/areaSquare.png'" [mathFunction]="areaSquare"></app-single-input>
+
+  <app-triple-input [title]="'Area of a Trapezoid'" [inputLabel]="'Base 1, Base 2, Height'" [valueLabel]="'Area'" [gistId]="'901c000bb326eea3cea99242702cd8d4'"
+    [equation]="'assets/equations/areaTrapezoid.png'" [mathFunction]="areaTrapezoid"></app-triple-input>
+
+  <app-double-input [title]="'Area of a Triangle'" [inputLabel]="'Base and Height'" [valueLabel]="'Area'" [gistId]="'7e1f93c18a9e79eb5c19223de844c456'"
+    [equation]="'assets/equations/areaTriangle.png'" [mathFunction]="areaTriangle"></app-double-input>
+
 </div>
